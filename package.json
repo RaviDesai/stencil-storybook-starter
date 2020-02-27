@@ -1,0 +1,42 @@
+{
+  "name": "stencil-storybook-starter",
+  "version": "0.0.1",
+  "description": "Stencil Component Starter",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/stencil-storybook-starter/stencil-storybook-starter.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "scripts": {
+    "build": "stencil build --docs",
+    "start": "concurrently --kill-others \"stencil build --dev --docs --watch --serve --no-open\" \"npm run storybook\"",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "storybook": "start-storybook -p 6006 -s dist --quiet",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@stencil/core": "^1.8.8",
+    "@storybook/addon-docs": "^5.3.14",
+    "@storybook/web-components": "^5.3.14",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^5.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "lit-html": "^1.1.2",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.13.0",
+    "react-is": "^16.13.0",
+    "write-file-webpack-plugin": "^4.5.1"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
