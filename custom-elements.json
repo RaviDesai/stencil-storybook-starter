@@ -15,10 +15,6 @@
         {
           "name": "last",
           "description": "The last name"
-        },
-        {
-          "name": "middle",
-          "description": "The middle name"
         }
       ]
     }
