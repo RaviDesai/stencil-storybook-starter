@@ -8,6 +8,7 @@ Clone the repo into a new folder:
 git clone https://github.com/claviska/stencil-storybook-starter your-lib-name
 cd your-lib-name
 git remote rm origin
+npm install
 ```
 
 Then swap out `stencil-storybook-starter` with `your-lib-name` in the following files:
